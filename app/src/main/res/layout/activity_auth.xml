@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registrationButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_theme"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".AuthActivity">
+
+    <TextView
+        android:fontFamily="@font/inter_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:text="@string/text_login"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:fontFamily="@font/inter_medium"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/input_userName_label"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        android:fontFamily="@font/inter_medium"
+        android:id="@+id/inputUserNameAuth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/input_userName_hint"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dark_white" />
+
+    <TextView
+        android:fontFamily="@font/inter_medium"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/input_password_label"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:fontFamily="@font/inter_medium"
+        android:id="@+id/inputPasswordAuth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/input_password_hint"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dark_white" />
+
+    <Button
+        android:fontFamily="@font/inter_medium"
+        android:id="@+id/buttonAuthorization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="@string/button_signin_text" />
+
+    <TextView
+        android:id="@+id/linkToRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/text_create_account"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

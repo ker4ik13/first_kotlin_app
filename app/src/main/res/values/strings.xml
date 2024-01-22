@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">First app</string>
+    <!--  Страница регистрации и авторизации  -->
+    <string name="text_registration">Регистрация</string>
+    <string name="button_signup_text">Зарегистрироваться</string>
+    <string name="text_login_account">Уже зарегистрированы? Войдите!</string>
+    <string name="text_login">Войдите в аккаунт</string>
+    <string name="button_signin_text">Войти</string>
+    <string name="text_create_account">Нет аккаунта? Зарегистрируйтесь!</string>
+    <string name="input_email_label">Ваш email</string>
+    <string name="input_email_hint">youremail@gmail.com</string>
+    <string name="input_userName_label">Логин</string>
+    <string name="input_userName_hint">user12345</string>
+    <string name="input_password_label">Ваш пароль</string>
+    <string name="input_password_hint">Пароль</string>
+    <!--  Страница товаров  -->
+    <string name="text_products">Товары</string>
+    <string name="button_text_view_product">Посмотреть</string>
+</resources>
