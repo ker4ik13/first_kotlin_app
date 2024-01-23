@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_theme"
     android:layout_height="match_parent"
     tools:context=".ItemActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/itemListImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/kitchen" />
+
+    <TextView
+        android:id="@+id/itemListTitle"
+        android:fontFamily="@font/inter"
+        android:paddingHorizontal="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/itemListDescription"
+        android:fontFamily="@font/inter"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="desc" />
+
+    <TextView
+        android:id="@+id/itemListPrice"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="price" />
+
+    <Button
+        android:id="@+id/buttonBuy"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text_buy" />
+
+</LinearLayout>

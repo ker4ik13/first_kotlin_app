@@ -1,9 +1,11 @@
 package com.example.firstapp
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +18,7 @@ class ProductsAdapter (private var items: List<Product>): RecyclerView.Adapter<P
         val title: TextView = view.findViewById(R.id.itemListTitle)
         val description: TextView = view.findViewById(R.id.itemListDescription)
         val price: TextView = view.findViewById(R.id.itemListPrice)
+        val viewButton: Button = view.findViewById(R.id.itemListButton)
 
     }
 
@@ -40,5 +43,17 @@ class ProductsAdapter (private var items: List<Product>): RecyclerView.Adapter<P
         )
 
         holder.image.setImageResource(imageId)
+
+        holder.viewButton.setOnClickListener {
+            val intent = Intent(holder.itemView.context, ItemActivity::class.java)
+
+            intent.putExtra("itemTitle", items[position].title)
+            intent.putExtra("itemImage", items[position].image)
+            intent.putExtra("itemDescription", items[position].description)
+            intent.putExtra("itemPrice", items[position].price.toString())
+            intent.putExtra("itemImageId", imageId.toString())
+
+            holder.itemView.context.startActivity(intent)
+        }
     }
 }

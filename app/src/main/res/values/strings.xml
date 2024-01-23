@@ -16,4 +16,5 @@
     <!--  Страница товаров  -->
     <string name="text_products">Товары</string>
     <string name="button_text_view_product">Посмотреть</string>
+    <string name="button_text_buy">Купить</string>
 </resources>
